@@ -3,6 +3,7 @@ import java.util.*;
 public class DataTypeConversion {
 
 	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the integer value");
 		int a = scan.nextInt();
@@ -12,6 +13,8 @@ public class DataTypeConversion {
 		
 		//Explicit conversion of data type
 		System.out.println("Enter the float value");
+	// when we take input from scanner don't take f in value like 12.34f it give exception,
+	//	but when we assign value directly then must use f sufic in value.	
 		float fl = scan.nextFloat();
 	//	float fl = 12.34f;
 		int num = (int)fl;
